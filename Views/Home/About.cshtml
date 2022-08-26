@@ -1,0 +1,188 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<div class="cards">
+<h4 style="color:aliceblue">
+    Our vision is to eradicate hunger and poverty in a sustainable manner and
+    this will help us reach SDG'S goal of "Zero Hunger" and "No poverty".
+    As a National Body we assist in all Provinces
+    and we aim to become sustainable and economically active.
+</h4>
+
+
+<h2 style="color:#3BBA9C" class="text-center display-4">About Us </h2>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white ">
+                    <div class="card-body">
+                        <h3 style="color:black;">History</h3>
+                        <img style="height:100px; width:auto;" src="~/images/logo.png" />
+                    </div>
+                </div>
+                <div class="card-back bg-dark text-white">
+                    <div class="card-body">
+                        <p>
+                            Changing Lifes since 1993Our vision is to eradicate hunger and poverty in a sustainable manner andthis will help us reach SDG'S goal of "Zero Hunger" and "No poverty"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white ">
+                    <div class="card-body">
+                        <h3 style="color:black;">Food</h3>
+                        <img style="height:100px; width:auto;" src="~/images/donation.jpg" />
+                    </div>
+                </div>
+                <div class="card-back bg-dark text-white">
+                    <div class="card-body">
+                        <p>
+                            In attemp to addressing hunger,
+                            Hands for dignity is
+                            providing maize meal,tin food,
+                            vegetables and sugar beans.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white ">
+                    <div class="card-body">
+                        <h3 style="color:black;"> Sustainability</h3>
+                        <img style="height:100px; width:auto;" src="~/images/clothes.jpg" />
+                    </div>
+                </div>
+                <div class="card-back bg-dark text-white">
+                    <div class="card-body">
+                        <p>
+                            We gladly accept any items in a good condition
+                            electrical appliences ,furniture and others.
+                            we sell other items like furniture and appliences and the money
+                            generated from sale of this items is used to continue the initiative
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white ">
+                    <div class="card-body">
+                        <h3 style="color:black;">Sponsor benefits</h3>
+                        <img style="height:100px; width:auto;" src="~/images/istockphoto-1362787762-1024x1024.jpg" />
+                    </div>
+                </div>
+                <div class="card-back bg-dark text-white">
+                    <div class="card-body">
+                        <p>
+                            benefits include inter alia: all relevent
+                            documentation needed for B-BBEE verification after
+                            project selection and sponsorship.
+                            Markiting,personal involvement at CSI projects and
+                            Section 18A certificate(donor deduction tax certificate)issued</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white ">
+                    <div class="card-body">
+                        <h3 style="color:black;">Our needs</h3>
+                        <img style="height:100px; width:auto;" src="~/images/connor-hall-r-HLeGnbY-8-unsplash.jpg" />
+                    </div>
+                </div>
+                <div class="card-back bg-dark text-white">
+                    <div class="card-body">
+                        <p>
+                            Donations towardsthe purchase and distribution
+                            of food and clothes.Non perishablr food, office
+                            consumables, point of sale software,donations towards
+                            training programes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white ">
+                    <div class="card-body">
+                        <h3 style="color:black;">Volunteering</h3>
+                        <img style="height:100px; width:auto;" src="~/images/porvety.jpg" />" />
+                    </div>
+                </div>
+                <div class="card-back bg-dark text-white">
+                    <div class="card-body">
+                        <p>There are various opportunities for volunteering in our organisation. One can help with gardining , training in the communities and also cleaning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+
+ 
+  
+
+<style>
+    .cards{
+        background-image: url(https://images.pexels.com/photos/9090750/pexels-photo-9090750.jpeg?auto=compress&cs=tinysrgb&w=1600);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 20px;
+    }
+
+
+
+
+    .card-flip > div {
+        backface-visibility: hidden;
+        transition: transform 1000ms;
+        transition-timing-function: initial;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        display: flex;
+    }
+
+    .card-front {
+        transform: rotateY(0deg);
+    }
+
+    .card-back {
+        transform: rotateY(180deg);
+        position: absolute;
+        top: 0;
+    }
+
+    .card-flip:hover .card-front {
+        transform: rotateY(-180deg);
+    }
+
+    .card-flip:hover .card-back {
+        transform: rotateY(0deg);
+    }
+
+
+
+   
+
+    body {
+        padding: 0 !important;
+        margin: 0 !important;
+        background: #f4f4f4 !important;
+    }
+</style>

@@ -1,0 +1,34 @@
+﻿
+@model List<U18220909_HW004.Models.Volunteers>
+@{
+    ViewBag.Title = "VolunterIndex";
+}
+
+<h2>Our Volunteers</h2>
+
+<table style="width:100%;">
+    <tr>
+        <th>PhoneNumber</th>
+        <th> IdNumber</th>
+        <th> FirstName</th>
+        <th>LastName</th>
+        <th>Email</th>
+        <th>chosenSlot</th>
+        <th>VolunterType</th>
+        <th>Info</th>
+    </tr>
+    @foreach (var volunter in Model)
+    {
+        <tr>
+            <td>@volunter.PhoneNumber</td>
+            <td>@volunter.IdNumber</td>
+            <td>@volunter.FirstName</td>
+            <td>@volunter.LastName</td>
+            <td>@volunter.Email</td>
+            <td>@volunter.chosenSlot</td>
+            <td>@volunter.VolunteerType</td>
+            <td>@volunter.getInfo()</td>
+
+        </tr>
+    }
+</table>

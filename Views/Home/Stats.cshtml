@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "Stats";
+}
+
+<h2>Stats</h2>
+
+<div class="container">
+
+    <h2>Hunger in South Africa</h2>
+    <br />
+    In the wake of the COVID-19 pandemic,
+    unemployment and food insecurity soared.
+    In 2021, 53 million people turned to food banks and community programs
+    for help putting food on the table.
+    The COVID-19 pandemic has had serious implications for the global economy,
+    with food security and nutrition being particularly impacted.
+    <br />
+    <br />
+    <p><a href="https://www.statssa.gov.za/?p=13422">Learn more about hunger in South africa </a></p>
+
+
+
+    <div id="piechart"></div>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+        // Load google charts
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        // Draw the chart and set the chart values
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['access to food', 2],
+                ['access to basic food ', 6],
+                ['able to eat twice', 4],
+                ['able to eat three times', 8],
+                ['no food', 4]
+            ]);
+
+            // Optional; add a title and set the width and height of the chart
+            var options = { 'title': 'SA average access to food', 'width': 550, 'height': 400 };
+
+            // Display the chart inside the <div> element with id="piechart"
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart.draw(data, options);
+        }
+    </script>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .container {
+            
+            /* Full height */
+            height: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            background-image: url(https://media.istockphoto.com/photos/open-hand-pleading-for-help-picture-id157431484?k=20&m=157431484&s=612x612&w=0&h=AsTWFWEcqEiVHVcVT1xHUN7XnAZdxlAc2WlOs6kDkog=);
+            
+            
+        }
+    </style>
+
+</div>
+
+

@@ -1,0 +1,36 @@
+﻿@model List<U18220909_HW004.Models.DonorRecepients>
+@{
+    ViewBag.Title = "DonorRecepientI";
+}
+
+<h2>DonorRecepient</h2>
+
+
+<h2>Manager</h2>
+
+<table style="width:100%;">
+    <tr>
+        <th>PhoneNumber</th>
+        <th>IdNumber</th>
+        <th> FirstName</th>
+        <th>LastName</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Info</th>
+
+
+    </tr>
+    @foreach (var recepients in Model)
+    {
+        <tr>
+            <td>@recepients.PhoneNumber</td>
+            <td>@recepients.IdNumber</td>
+            <td>@recepients.FirstName</td>
+            <td>@recepients.LastName</td>
+            <td>@recepients.Email</td>
+            <td>@recepients.Address</td>
+            <td>@recepients.getInfo()</td>
+
+        </tr>
+    }
+</table>

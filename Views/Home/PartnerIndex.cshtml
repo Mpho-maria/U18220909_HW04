@@ -1,0 +1,35 @@
+﻿@model List<U18220909_HW004.Models.Partners>
+@{
+    ViewBag.Title = "PartnerIndex";
+}
+
+
+<h2>Our Partners</h2>
+
+<table style="width:100%;">
+    <tr>
+        <th>PhoneNumber</th>
+        <th> FirstName</th>
+        <th>LastName</th>
+        <th>CompanyName</th>
+        <th>Email</th>
+        <th>TradingLicence</th>
+        <th>ContributionType</th>
+        <th>Info</th>
+
+    </tr>
+    @foreach (var partnerr in Model)
+    {
+        <tr>
+            <td>@partnerr.PhoneNumber</td>
+            <td>@partnerr.FirstName</td>
+            <td>@partnerr.LastName</td>
+            <td>@partnerr.CompanyName</td>
+            <td>@partnerr.Email</td>
+            <td>@partnerr.TradingLicence</td>
+            <td>@partnerr.ContributionType</td>
+            <td>@partnerr.getInfo()</td>
+
+        </tr>
+    }
+</table>
